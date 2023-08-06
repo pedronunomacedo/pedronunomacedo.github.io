@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import { Carousel } from "@material-tailwind/react"
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
@@ -7,12 +7,15 @@ import "slick-carousel/slick/slick-theme.css"
 import "./ProjectsCarousel.css"
 
 const ProjectsCarousel = () => {
+    const [currentSlide, setCurrentSlide] = useState(0); // State to keep track of the current slide index
+
     const settings = {
         dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        afterChange: (current) => setCurrentSlide(current), // Update the current slide index
     };
 
     return (
@@ -23,7 +26,7 @@ const ProjectsCarousel = () => {
                         animate-fade animate-once animate-duration-1000 animate-ease-in-out'
             >
             <Slider {...settings}>
-                <div className='lg:h-[400px] sm:h-[500px] flex items-center justify-center relative rounded-lg whitespace-normal project-div' id='tech4you-project-div'>
+                <div key={0} className='lg:h-[400px] sm:h-[500px] flex items-center justify-center relative rounded-lg whitespace-normal project-div' id='tech4you-project-div'>
                     <img
                         src="https://i.ibb.co/S7sjmFF/homepage.png"
                         alt='image 1'
@@ -39,7 +42,7 @@ const ProjectsCarousel = () => {
                         </div>
                     </div>
                 </div>
-                <div className='lg:h-[400px] sm:h-[500px] flex items-center justify-center relative rounded-lg whitespace-normal project-div' id='compiler-project-div'>
+                <div key={1} className='lg:h-[400px] sm:h-[500px] flex items-center justify-center relative rounded-lg whitespace-normal project-div' id='compiler-project-div'>
                     <img
                         src="https://i.ibb.co/P6j6Cw1/compiler-stages.png"
                         alt='image 2'
@@ -57,6 +60,28 @@ const ProjectsCarousel = () => {
                     </div>
                 </div>
             </Slider>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+                <div
+                    key={0}
+                    style={{
+                        width: '10px',
+                        height: '10px',
+                        borderRadius: '50%',
+                        background: currentSlide === 0 ? '#0077B5' : 'gray',
+                        margin: '0 5px',
+                    }}
+                ></div>
+                <div
+                    key={1}
+                    style={{
+                        width: '10px',
+                        height: '10px',
+                        borderRadius: '50%',
+                        background: currentSlide === 1 ? '#0077B5' : 'gray',
+                        margin: '0 5px',
+                    }}
+                ></div>
+            </div>
         </div>
     );
 };

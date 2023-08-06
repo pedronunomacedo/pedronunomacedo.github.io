@@ -8,7 +8,7 @@ const ContactMe = () => {
                 id="introduction"
                 className='flex-1 flex flex-col 
                             max-width-[1000px] mx-auto pt-[100px] h-full md:p-8 lg:p-16
-                            justify-center align-items
+                            justify-center items-center text-center
                             animate-fade-right animate-once animate-duration-600 animate-ease-linear
                             main-title'
             >
@@ -47,7 +47,7 @@ const ContactMe = () => {
                         <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#0077B5] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
                             <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
                                 <a href="mailto:pedronunomacedo@hotmail.com">
-                                    <FaEnvelope className='text-2xl text-[#0077B5] group-hover:text-white' />
+                                    <FaEnvelope className='text-2xl text-[c] group-hover:text-white' />
                                 </a>
                             </div>
                         </div>
