@@ -25,21 +25,21 @@ const ContactMe = () => {
                     <div className='flex flex-row space-x-4'>
                         <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-blue-600 cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
                             <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                <a href="https://www.linkedin.com/in/pedronmacedo">
                                     <FaLinkedin className='text-2xl text-blue-600 group-hover:text-white' />
                                 </a>
                             </div>
                         </div>
                         <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#E4405F] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
                             <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                <a href="https://instagram.com/pedronunomacedo?igshid=MmIzYWVlNDQ5Yg==">
                                     <FaInstagram className='text-2xl text-[#E4405F] group-hover:text-white' />
                                 </a>
                             </div>
                         </div>
                         <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#6B6B6B] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
                             <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                <a href="https://github.com/pedronunomacedo">
                                     <FaGithub className='text-2xl text-[#181717] group-hover:text-white' />
                                 </a>
                             </div>
