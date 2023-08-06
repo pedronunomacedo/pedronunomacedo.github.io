@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaEnvelope } from 'react-icons/fa'
+import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 const ContactMe = () => {
     return (
@@ -20,13 +20,36 @@ const ContactMe = () => {
                 </div>
                 <div className='text-sm text-gray-400 max-w-[300px] md:max-w-[397px] mt-4 flex flex-col justify-center items-center'>
                     <p className='text-center text-lg'>
-                        If you wish to contact me, you can send me an email!
+                        Feel free to reach out if you have any questions, inquiries, or just want to get in touch. I'm always available and eager to hear from you. Let's connect and have a great conversation!
                     </p>
-                    <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-blue-400 cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
-                        <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-                            <a href="mailto:pedronunomacedo@hotmail.com">
-                                <FaEnvelope className='text-2xl text-blue-400 group-hover:text-white' />
-                            </a>
+                    <div className='flex flex-row space-x-4'>
+                        <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-blue-600 cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
+                            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                    <FaLinkedin className='text-2xl text-blue-600 group-hover:text-white' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#E4405F] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
+                            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                    <FaInstagram className='text-2xl text-[#E4405F] group-hover:text-white' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#6B6B6B] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
+                            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                    <FaGithub className='text-2xl text-[#181717] group-hover:text-white' />
+                                </a>
+                            </div>
+                        </div>
+                        <div className='relative rounded-full bg-gray-200 p-4 mt-5 w-12 h-12 hover:bg-[#0077B5] cursor-pointer group hover:animate-jump hover:animate-once hover:animate-duration-1000 hover:animate-ease-out'>
+                            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+                                <a href="mailto:pedronunomacedo@hotmail.com">
+                                    <FaEnvelope className='text-2xl text-[#0077B5] group-hover:text-white' />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
