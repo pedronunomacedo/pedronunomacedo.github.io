@@ -17,11 +17,12 @@ const Projects = () => {
                         Recent <span className='text-blue-400'>projects</span>
                     </h1>
                 </div>
-                <div className='text-sm text-gray-400 max-w-[300px] md:max-w-[397px] mt-4'>
-                    <p className='text-justify text-lg'>
-                        Through this section, you'll get an exclusive glimpse into the diverse range of projects I've been involved in.
-                        From software development to web deveolpment, each project represents a unique challenge and an opportunity for growth.
+                <div className='text-gray-400 max-w-[300px] md:max-w-[397px] mt-4 text-justify text-lg'>
+                    <p className=''>
+                        Through this section, you'll get an exclusive glimpse into the diverse range of projects I've been involved in. 
+                        From software development to web deveolpment, each project represents a unique challenge and an opportunity for growth. 
                     </p>
+                    <p className=''><strong>For more information about a specific project, you can check my <a href='https://github.com/pedronunomacedo' alt='github-profile-link' className='underline hover:text-[#6B6B6B]'>github</a> profile.</strong></p>
                 </div>
             </div>
 
