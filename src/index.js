@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +10,31 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const scrollAnimationsElements = document.querySelectorAll('.scroll-animation');
+
+// console.log('Elements with class "scroll-animation":', scrollAnimationsElements);
+
+// const options = {
+//   root: null,
+//   rootMargin: '0px',
+//   threshold: 0.5, // 50% visible (appear)
+// }
+
+// let prevScrollY = window.prevScrollY;
+
+// const intersectionObserver = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     const element = entry.target;
+//     console.log(element);
+
+//     if (entry.isIntersecting) {
+//       element.style.opacity = 1;
+//     } else {
+//       element.style.opacity = 0;
+//     }
+//   });
+// }, options);
+
+// scrollAnimationsElements.forEach(element => {
+//   intersectionObserver.observe(element);
+// });

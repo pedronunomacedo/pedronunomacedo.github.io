@@ -1,0 +1,38 @@
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .flex-content {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #me-logo {
+        max-width: 50%;
+    }
+    
+    .animate-fade-out {
+        animation: fadeOut 600ms ease-in-out;
+    }
+
+    .main-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-hover-content .project-title {
+        font-size: 15px;
+    }
+
+    .project-hover-content .project-explanation {
+        font-size: 10px;
+        overflow: scroll;
+    }
+}

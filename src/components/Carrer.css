@@ -1,0 +1,21 @@
+@media only screen and (max-width: 640px) {
+    .flex-content {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #carrer-timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #carrer-timeline ol {
+        margin-right: 0;
+    }
+    
+    #carrer-timeline ol:last-child {
+        margin-left: 0;
+    }
+}
