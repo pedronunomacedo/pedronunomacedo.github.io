@@ -51,6 +51,14 @@
     opacity: 1;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    scrollbar-width: none; /* For Firefox */
+}
+
 @media only screen and (max-width: 640px) {
     .slick-arrow.slick-next::before, 
     .slick-arrow.slick-prev::before {
