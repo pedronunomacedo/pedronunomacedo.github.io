@@ -86,3 +86,13 @@
         object-fit: cover;
     }
 }
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: none;
+}
