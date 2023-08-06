@@ -3,7 +3,7 @@ import ProjectsCarousel from './ProjectsCarousel'
 
 const Projects = () => {
     return (
-        <div name="projects" id="projects" className='w-full bg-black flex sm:flex-row max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain text-white pt-32 scroll-animation'>
+        <div name="projects" id="projects" className='w-full bg-black flex sm:flex-row max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain text-white pt-32 scroll-anim'>
             <div
                 id="introduction"
                 className='flex-1 flex flex-col 

@@ -5,7 +5,7 @@ import './Carrer.css'
 
 const Carrer = () => {
     return (
-        <div name="about" id="carrer" className='w-full bg-black max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain text-white pt-32 scroll-animation'>
+        <div name="about" id="carrer" className='w-full bg-black max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain text-white pt-32 scroll-anim'>
             <div
                 className='flex-1 flex flex-row 
                             max-width-[1000px] mx-auto pt-[100px] h-full md:p-8 lg:p-16 mb-16

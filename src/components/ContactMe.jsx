@@ -3,7 +3,7 @@ import { FaEnvelope } from 'react-icons/fa'
 
 const ContactMe = () => {
     return (
-        <div name="contact-me" id="contact-me" className='w-full bg-black flex sm:flex-row max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain pt-16 scroll-animation'>
+        <div name="contact-me" id="contact-me" className='w-full bg-black flex sm:flex-row max-w-[2000px] sm:px-36 flex-content items-center sm:object-contain pt-16 scroll-anim'>
             <div
                 id="introduction"
                 className='flex-1 flex flex-col 

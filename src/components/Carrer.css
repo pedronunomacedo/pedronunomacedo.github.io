@@ -18,4 +18,18 @@
     #carrer-timeline ol:last-child {
         margin-left: 0;
     }
+      
+}
+
+@keyframes custom-spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.animate-custom-spin:not(:hover) {
+    animation: custom-spin 4s linear infinite; /* Adjust the animation duration as needed */
 }
