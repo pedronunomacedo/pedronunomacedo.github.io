@@ -91,7 +91,7 @@ const CarrerTimeline = () => {
             </div>
             {!timelineLine ?
                 <div>
-                    <ol className='relative border-l border-gray-200'>
+                    <ol className='relative border-l border-gray-200 ml-10'>
                         <li className='mb-10 relative p-0'>
                             <motion.div 
                                 initial={{ opacity: 0, y: -100 }}

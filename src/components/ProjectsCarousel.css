@@ -48,7 +48,8 @@
     margin-right: 15px;
 }
 
-#compiler-project-div {
+#compiler-project-div,
+#tech4you-project-div {
     display: flex !important;
 }
 
