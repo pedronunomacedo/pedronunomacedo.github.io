@@ -6,7 +6,6 @@ import About from './components/About'
 import Projects from './components/Projects';
 import Carrer from './components/Carrer';
 import ContactMe from './components/ContactMe';
-// import Test from './components/Test';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <Projects />
       <Carrer />
       <ContactMe />
-      {/* <Test /> */}
     </NavContextProvider>
   );
 }

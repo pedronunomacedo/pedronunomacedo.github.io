@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import Slider from 'react-slick'
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import "./ProjectsCarousel.css"
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './ProjectsCarousel.css';
 
 const ProjectsCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0); // State to keep track of the current slide index
@@ -17,12 +18,16 @@ const ProjectsCarousel = () => {
     };
 
     return (
-        <div 
+        <motion.div 
             id='projects-carousel' 
             className='w-3/4 mx-auto lg:w-[600px] sm:h-[500px] 
-                        justify-center items-center
-                        animate-fade animate-once animate-duration-1000 animate-ease-in-out'
-            >
+                        justify-center items-center'
+
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeInOut" }}
+        >
+            {/* animate-fade animate-once animate-duration-1000 animate-ease-in-out */}
             <Slider {...settings}>
                 <div key={0} className='lg:h-[400px] sm:h-[500px] flex items-center justify-center relative rounded-lg whitespace-normal project-div' id='tech4you-project-div'>
                     <img
@@ -80,7 +85,7 @@ const ProjectsCarousel = () => {
                     }}
                 ></div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
